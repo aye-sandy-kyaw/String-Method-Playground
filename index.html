@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>String Method Playground</title>
+  </head>
+  <body>
+    <div class="outer">
+      <!-- Show Characters Section -->
+      <div class="inner">
+        <h1>String Method Playground</h1>
+        <div class="typeNum">
+          <div id="showchar"></div>
+          <p>
+            Type Number for charAt, charCodeAt, includes, indexOf, lastIndexOf,
+            startsWith, endsWith
+          </p>
+        </div>
+
+        <!-- InputBox Section -->
+        <div id="choose">
+          <input
+            type="text"
+            id="inputBox"
+            class="choose"
+            onfocus="hidemessage()"
+          />
+          <span id="message">! Required. Fill in the text box.</span>
+          <br />
+
+          <!-- Method Section -->
+          <button onclick="calculate('charAt')">charAt()</button>
+          <button onclick="calculate('charCodeAt')">charCodeAt()</button>
+          <button onclick="calculate('toUpperCase')">toUpperCase()</button>
+          <button onclick="calculate('toLowerCase')">toLowerCase()</button>
+          <button onclick="calculate('trim')">trim()</button>
+          <button onclick="calculate('includes')">includes()</button>
+          <button onclick="calculate('indexOf')">indexOf()</button>
+          <button onclick="calculate('lastIndexOf')">lastIndexOf()</button>
+          <button onclick="calculate('startsWith')">startsWith()</button>
+          <button onclick="calculate('endsWith')">endsWith()</button>
+        </div>
+
+        <!-- Typing and Button Section -->
+        <div class="characters">
+          <div class="letters">
+            <div>
+              <!-- CapsLock Color Change -->
+              <input type="checkbox" id="uncheck" />
+              <label for="uncheck">
+                <div id="capslock" onclick="capsLockBtn()">CapsLock</div>
+              </label>
+
+              <button class="letter" onclick="clickLetter(this)">a</button>
+              <button class="letter" onclick="clickLetter(this)">b</button>
+              <button class="letter" onclick="clickLetter(this)">c</button>
+              <button class="letter" onclick="clickLetter(this)">d</button>
+              <button class="letter" onclick="clickLetter(this)">e</button>
+              <button class="letter" onclick="clickLetter(this)">f</button>
+              <button class="letter" onclick="clickLetter(this)">g</button>
+              <button class="letter" onclick="clickLetter(this)">h</button>
+              <button class="letter" onclick="clickLetter(this)">i</button>
+
+              <button class="letter" onclick="clickLetter(this)">j</button>
+              <button class="letter" onclick="clickLetter(this)">k</button>
+              <button class="letter" onclick="clickLetter(this)">l</button>
+              <button class="letter" onclick="clickLetter(this)">m</button>
+              <button class="letter" onclick="clickLetter(this)">n</button>
+              <button class="letter" onclick="clickLetter(this)">o</button>
+              <button class="letter" onclick="clickLetter(this)">p</button>
+              <button class="letter" onclick="clickLetter(this)">q</button>
+              <button class="letter" onclick="clickLetter(this)">r</button>
+              <button class="letter" onclick="clickLetter(this)">s</button>
+
+              <button id="clear" onclick="clearBtn()">Clear</button>
+
+              <button class="letter" onclick="clickLetter(this)">t</button>
+              <button class="letter" onclick="clickLetter(this)">u</button>
+              <button class="letter" onclick="clickLetter(this)">v</button>
+              <button class="letter" onclick="clickLetter(this)">w</button>
+              <button class="letter" onclick="clickLetter(this)">x</button>
+              <button class="letter" onclick="clickLetter(this)">y</button>
+              <button class="letter" onclick="clickLetter(this)">z</button>
+              <button id="backspace" onclick="backspaceBtn()">Backspace</button>
+            </div>
+
+            <button id="space" onclick="spaceBtn()">&nbsp;</button>
+          </div>
+
+          <div class="number">
+            <button class="Num" onclick="clickNumber(this)">1</button>
+            <button class="Num" onclick="clickNumber(this)">2</button>
+            <button class="Num" onclick="clickNumber(this)">3</button>
+            <button class="Num" onclick="clickNumber(this)">4</button>
+            <button class="Num" onclick="clickNumber(this)">5</button>
+            <button class="Num" onclick="clickNumber(this)">6</button>
+            <button class="Num" onclick="clickNumber(this)">7</button>
+            <button class="Num" onclick="clickNumber(this)">8</button>
+            <button class="Num" onclick="clickNumber(this)">9</button>
+            <button class="Num" onclick="clickNumber(this)">0</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
